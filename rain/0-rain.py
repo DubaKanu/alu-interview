@@ -33,5 +33,6 @@ def rain(walls):
     for i in range(n):
         water_level = min(left_max[i], right_max[i])
         if water_level > walls[i]:
-            water += water_level - walls[i] 
- return water
+            water += water_level - walls[i]
+    
+    return water
